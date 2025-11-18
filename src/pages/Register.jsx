@@ -16,7 +16,7 @@ const Register = () => {
     if (trigger) {
       const registerUser = async () => {
         try {
-          const resp = await axios.post("http://localhost:5000/api/v1/signup", formData);
+          const resp = await axios.post(" https://expensetracker-server-h7t6.onrender.com/api/v1/signup", formData);
           console.log("Registered:", resp.data);
           setFormData({
             fullName: "",

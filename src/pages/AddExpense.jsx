@@ -34,7 +34,7 @@ export default function ExpenseManager() {
     try {
       const token = localStorage.getItem("token");
       const resp = await axios.post(
-        "http://localhost:5000/api/v1/addexpense",
+        " https://expensetracker-server-h7t6.onrender.com/api/v1/addexpense",
         expense,
         {
           headers: {

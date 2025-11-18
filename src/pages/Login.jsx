@@ -18,7 +18,7 @@ const Login = () => {
     if (trigger) {
       const loginInfo = async () => {
         try {
-          const resp = await axios.post("http://localhost:5000/api/v1/login", {
+          const resp = await axios.post(" https://expensetracker-server-h7t6.onrender.com/api/v1/login", {
             email,
             password,
           });

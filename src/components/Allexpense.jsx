@@ -16,7 +16,7 @@ const AllExpense = () => {
           setLoggedIn(true);
         }
 
-        const resp = await axios.get("http://localhost:5000/api/v1/getExpense", {
+        const resp = await axios.get(" https://expensetracker-server-h7t6.onrender.com/api/v1/getExpense", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
